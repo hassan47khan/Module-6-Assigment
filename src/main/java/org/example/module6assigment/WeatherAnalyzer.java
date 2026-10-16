@@ -221,4 +221,4 @@ static Report report(List<WeatherReading> readings, YearMonth month, double thre
 
 
 
-}
+

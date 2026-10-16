@@ -1,0 +1,68 @@
+/* Weather Data Analyzer: simple light theme */
+
+.app {
+    -fx-background-color: #f4f6f8;
+    -fx-font-family: "System";
+    -fx-font-size: 13px;
+}
+
+.header {
+    -fx-background-color: #2d6cdf;
+    -fx-padding: 14 16 14 16;
+}
+
+.title {
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.status {
+    -fx-text-fill: #dce8ff;
+    -fx-font-size: 12px;
+}
+
+.section {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #34495e;
+}
+
+.toolbar {
+    -fx-background-color: white;
+    -fx-background-radius: 6;
+    -fx-padding: 10;
+    -fx-border-color: #dde3ea;
+    -fx-border-radius: 6;
+}
+
+.button {
+    -fx-background-color: #e4e9ef;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #d5dce5;
+}
+
+.button.primary {
+    -fx-background-color: #2d6cdf;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.button.primary:hover {
+    -fx-background-color: #2459b8;
+}
+
+/* Colour-coded weather category cells in the table */
+.table-cell.hot  { -fx-text-fill: #c0392b; -fx-font-weight: bold; }
+.table-cell.warm { -fx-text-fill: #d68910; -fx-font-weight: bold; }
+.table-cell.mild { -fx-text-fill: #1e8449; -fx-font-weight: bold; }
+.table-cell.cold { -fx-text-fill: #2471a3; -fx-font-weight: bold; }
+
+.report {
+    -fx-font-family: "Monospaced";
+    -fx-font-size: 13px;
+}
