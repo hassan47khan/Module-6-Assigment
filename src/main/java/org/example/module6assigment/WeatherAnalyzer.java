@@ -10,7 +10,6 @@ import java.util.Comparator;
 import java.util.stream.Stream;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Optional;
 import java.util.OptionalDouble;
 
 
@@ -41,7 +40,7 @@ public interface WeatherAnalyzer {
     /// @throws IOException              if the file cannot be read
     /// @throws IllegalArgumentException if any row is malformed
 
-    static List<WeatherReading> loadCsv(Path csv) throws IOException {
+    static List<WeatherReading> load(Path csv) throws IOException {
         try (Stream<String> lines = Files.lines(csv)) {
             return lines
                     .map(line -> line.replace("\uFEFF", "").strip())
